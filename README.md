@@ -1,7 +1,18 @@
-系统环境：python3.5.2,WIN10操作系统，使用Pycharm 编辑器
-使用方法介绍：目录下有俩个文件，一个doubanMovie.py文件，一个stopwords.txt中文停用词文件，需要百度下载simhei.ttf字体文件，放到同一目录下，运行doubanMovie.py
-会生成电影《古墓丽影：源起之战》的词云图
-分析一下爬取的过程
-1.抓取网页数据
-2.清理数据
-3.用词云进行展示
+## 豆瓣热映影评分析词云图生成
+
+### 系统环境：python3.8.12 ，编译器： Jupyter notebooks
+
+### 目录结构 
+DouBanMovies
+├─ SimHei.ttf  字体(黑体)
+└─ stopwords.txt 中文停用词
+└─ doubanMovie.py python脚本
+
+### 爬取过程
+1. 抓取热映电影的网页内容
+2. 爬取评论
+3. 清洗数据
+4. 使用结巴分词进行中文分词
+5. 去掉停用词
+6. 统计词频
+7. 用词云进行展示
